@@ -20,8 +20,8 @@ gpg -a --export E084DAB9 | sudo apt-key add -
 sudo apt-get install gdebi libapparmor1 -y
 
 # Go get the latest from http://www.rstudio.com/products/rstudio/download-server/ if you don't like my hard-coding
-wget http://download2.rstudio.org/rstudio-server-0.98.1102-amd64.deb
-sudo gdebi --non-interactive rstudio-server-0.98.1102-amd64.deb
+wget http://download2.rstudio.org/rstudio-server-0.99.442-amd64.deb
+sudo gdebi --non-interactive rstudio-server-0.99.442-amd64.deb
 
 echo "######################################################"
 echo ""
@@ -30,7 +30,7 @@ echo "Choose your password for rstudiouser"
 echo ""
 echo "######################################################"
 
-sudo adduser rstudiouser
+sudo adduser rstudio
 
 
 # get your AWS instance public hostname
